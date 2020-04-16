@@ -1,6 +1,6 @@
 import random
 
-sets = ("hearts", "clubs", "diamonds", "spades")
+sets = ("Hearts", "Clubs", "Diamonds", "Spades")
 
 randomNo52 = random.randint(0,13)
 randomNo52 = randomNo52 +1
@@ -18,3 +18,5 @@ if randomNo52 <= 10 and randomNo52 > 1:
 randomSet = random.choice(sets)
 
 print ("your card is the " + randomNo52 + " "+ "of " + randomSet)
+
+
