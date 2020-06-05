@@ -1,22 +1,11 @@
 import random
 
 sets = ("Hearts", "Clubs", "Diamonds", "Spades")
-
-randomNo52 = random.randint(0,13)
-randomNo52 = randomNo52 +1
-if randomNo52 == 11:
-    randomNo52 = "Jack"
-if randomNo52 == 12:
-    randomNo52 = "Queen"
-if randomNo52 == 13:
-    randomNo52 = "King"
-if randomNo52 == 1:
-    randomNo52 = "Ace"
-if randomNo52 <= 10 and randomNo52 > 1:
-    randomNo52 = str(randomNo52)
+cards = ("king", "Queen", "Jack", "10", "9", "8", "7", "6", "5", "4", "3", "2", "Ace")
 
 randomSet = random.choice(sets)
+randomCard = random.choice(cards)
 
-print ("your card is the " + randomNo52 + " "+ "of " + randomSet)
+print ("your card is the " + randomCard + " "+ "of " + randomSet)
 
 
